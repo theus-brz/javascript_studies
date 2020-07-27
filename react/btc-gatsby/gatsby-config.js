@@ -43,6 +43,13 @@ module.exports = {
         displayName: process.env.NODE_ENV !== 'production' ,
       },
     },
+    {
+      resolve: `gatsby-plugin-page-creator`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        ignore: [`**/styles.js`],
+      },
+    },
     `gatsby-plugin-offline`,
   ],
 }
